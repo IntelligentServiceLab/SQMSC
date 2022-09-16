@@ -5,7 +5,7 @@ All experiments are implemented on a PC with AMD Ryzen 5, CPU 2.38GHZ, and 16G R
 - GA, PSO and TLBO use the original candidate set as the data input, while these algorithms+Skyline select the Skyline service in the candidate service set as the latest candidate set.
 - The entire process of SQMSC-MH is to find Skyline services.
 - The input data of the above code are all data in the qws2resetIndex dataset. The qws2resetIndex dataset is roughly the same as the real dataset QWS2. The difference is that we have disturbed its row index.
-- Qws2resetIndex records eight QoS attributes, including response time, availability, throughput, successability, reliability, compliance, best practices and latency.
+- Qws2 reset Index records eight QoS attributes, including response time, availability, throughput, successability, reliability, compliance, best practices and latency.
 - When two QoS attributes are set in the experiment, response time and availability are selected; response time, availability and throughput, is selected for three; and response time, availability, throughput and successability are selected for four.
 
 ## Parameters
