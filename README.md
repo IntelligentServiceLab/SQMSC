@@ -29,9 +29,9 @@ All experiments are implemented on a PC with AMD Ryzen 5, CPU 2.38GHZ, and 16G R
 - candidate_number: Number of services in candidate set of each subtask
 - crossover_probability
 - mutation_probability
-- task_number-
+- task_number
 - population_size
 
 ## Note：
 - If you have any question about my code or want to share your idea, you can send email to me. Welcome at any time!
-- Email:jiayanxiang02@gmail.com
+- Email: jiayanxiang02@gmail.com
