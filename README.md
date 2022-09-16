@@ -16,7 +16,7 @@ All experiments are implemented on a PC with AMD Ryzen 5, CPU 2.38GHZ, and 16G R
 - task_number
 - population_size
 ### PSO、PSO+Skylie：
-- w: Inertia weight)
+- w: Inertia weight
 - c1 and c2: Learning factor
 - Vmax: speed limit
 - task_number
