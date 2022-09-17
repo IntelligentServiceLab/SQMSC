@@ -81,6 +81,20 @@ With the development of service-oriented manufacturing model, more and more manu
 | TLBO | 33.872206300000002 | 47.9586738 | 48.4562685 | 51.2441329 | 57.3288528 |
 | TLBO+Skyline | 22.4986904 | 25.4216284 | 26.5533974 | 29.7677855 | 32.1032783 |
 
+- Running time of each component in Alg. 1 with different number of QoS properties
+
+|  | 2 | 3 | 4 |
+| :----: | :----: | :----: | :----: |
+| subtask | 0.009208799999999684 | 0.009847200000000278 | 0.011046299999999398 |
+| compoundTask | 0.07878490000000049 | 1.3439001999999993 | 1.323939499999999 |
+| GA | 9.188933799999999 | 12.777769 | 15.418582299999999 |
+- Running time of each component in Alg. 1 with different number of service candidates
+
+|  | 20 | 40 | 60 | 80 | 100 |
+| :----: | :----: | :----: | :----: | :----: | :----: |
+| subtask | 0.005989699999999765 | 0.009259899999999988 | 0.013277900000000287 | 0.017086400000000168 | 0.024998800000000543 |
+| compoundTask | 0.3279809999999994 | 1.6510077 | 2.6586736000000002 | 5.3516318 | 5.759590899999999 |
+| GA | 7.9854034 | 10.013262 | 11.3622174 | 13.4244668 | 15.0114512 |
 - The input data of the above code are all data in the [qws2resetIndex](https://github.com/IntelligentServiceLab/SQMSC/blob/main/qws2resetIndex.csv) dataset. The qws2resetIndex dataset is roughly the same as the real dataset QWS2. The difference is that we have disturbed its row index.
 - Qws2 reset Index records eight QoS attributes, including response time, availability, throughput, successability, reliability, compliance, best practices and latency.
 
