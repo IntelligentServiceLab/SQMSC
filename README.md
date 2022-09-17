@@ -31,15 +31,17 @@ With the development of service-oriented manufacturing model, more and more manu
 | PSO+Skyline | This approach uses particle swarm optimization algorithm with initial Skyline services for each tasks. | [PSO+Skyline](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO%2BSkyline.py) |
 | TLBO+Skyline | This approach uses teaching learning based optimization algorithm with initial Skyline services for each tasks. | [TLBO+Skyline](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO%2BSkyline.py) |
 | SQMSC-MH | This approach is a variant of SQWSC by not using a meta-heuristic algorithm, i.e., select the Skyline(compound) services. | [SQMSC-MH](https://github.com/IntelligentServiceLab/SQMSC/blob/main/SQMSC-MH.py) |
+### 3. Evalution
+- Optimality with different number of QoS properties.
+- Optimality with different number of service candidates.
+- Scalability with different number of QoS properties.
+- Scalability with different number of service candidates.
 
-### Evalution
 
 
-- [GA](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA.py), [PSO](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO.py) and [TLBO](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO.py) use the original candidate set as the data input, while [GA+Skyline](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA%2BSkyline.py), [PSO+Skyline](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO%2BSkyline.py) and [TLBO+Skyline](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO%2BSkyline.py) select the Skyline service in the candidate service set as the latest candidate set.
-- The entire process of SQMSC-MH is to find Skyline services.
 - The input data of the above code are all data in the [qws2resetIndex](https://github.com/IntelligentServiceLab/SQMSC/blob/main/qws2resetIndex.csv) dataset. The qws2resetIndex dataset is roughly the same as the real dataset QWS2. The difference is that we have disturbed its row index.
 - Qws2 reset Index records eight QoS attributes, including response time, availability, throughput, successability, reliability, compliance, best practices and latency.
-- When two QoS attributes are set in the experiment, response time and availability are selected; response time, availability and throughput, is selected for three; and response time, availability, throughput and successability are selected for four.
+
 
 ## Parameters
 ### GA、GA+Skyline
