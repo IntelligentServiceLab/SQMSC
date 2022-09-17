@@ -57,9 +57,29 @@ With the development of service-oriented manufacturing model, more and more manu
 | TLBO | 49.74575913668209 | 54.671776338690144 | 54.317740187320275 | 52.98856990084743 | 55.03909809783939 |
 | TLBO+Skyline | 53.74622587553793 | 62.44832310176658 | 67.31248795858882 | 71.63872478429907 | 70.80143030702146 |
 - Scalability with different number of QoS properties.
+
+|  | 2 | 3 | 4 |
+| :----: | :----: | :----: | :----: |
+| SQMSC-MH | 1.8742110000000016 | 44.29814710000001 | 67.10261820000001 |
+| SQMSC | 6.438324199999998925 | 10.2966509999999971 | 12.1536984999999744 |
+| GA | 31.35281999 | 42.167804751 | 49.87416223 |
+| GA+Skyline | 16.5236609 | 22.7193692 | 27.1541851 |
+| PSO | 55.3634121 | 63.73409817 | 66.30378693 |
+| PSO+Skyline | 44.5543584 | 50.04044041 | 53.5290191 |
+| TLBO | 36.6393984 | 44.03737040000001 | 52.7720596 |
+| TLBO+Skyline | 31.0636968 | 26.7600426 | 30.4317083 |
 - Scalability with different number of service candidates.
 
-
+|  | 20 | 40 | 60 | 80 | 100 |
+| :----: | :----: | :----: | :----: | :----: | :----: |
+| SQMSC-MH | 0.6002301999999995 | 35.6901355 | 41.6336575 | 53.012968799999996 | 72.1134163 |
+| SQMSC | 8.762266700000047781 | 11.95601510000000111 | 13.073432299999999 | 14.20586500000000015 | 15.065903499999997 |
+| GA | 39.2843594 | 41.165903799999995 | 44.595518400000003 |46.384784100000005| 42.3830681 |
+| GA+Skyline | 20.2148793 | 18.4587934 | 21.6777734 | 23.3792838 | 24.8068188 |
+| PSO | 58.486479415 | 60.69495266 | 61.44815266 | 64.69434118 | 65.475394415 |
+| PSO+Skyline | 44.8884597 | 49.74681186000008 | 52.047514549999995 | 55.13546811999988 | 56.438874295000005 |
+| TLBO | 33.872206300000002 | 47.9586738 | 48.4562685 | 51.2441329 | 57.3288528 |
+| TLBO+Skyline | 22.4986904 | 25.4216284 | 26.5533974 | 29.7677855 | 32.1032783 |
 
 - The input data of the above code are all data in the [qws2resetIndex](https://github.com/IntelligentServiceLab/SQMSC/blob/main/qws2resetIndex.csv) dataset. The qws2resetIndex dataset is roughly the same as the real dataset QWS2. The difference is that we have disturbed its row index.
 - Qws2 reset Index records eight QoS attributes, including response time, availability, throughput, successability, reliability, compliance, best practices and latency.
