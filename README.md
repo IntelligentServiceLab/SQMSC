@@ -33,6 +33,17 @@ With the development of service-oriented manufacturing model, more and more manu
 | SQMSC-MH | This approach is a variant of SQWSC by not using a meta-heuristic algorithm, i.e., select the Skyline(compound) services. | [SQMSC-MH](https://github.com/IntelligentServiceLab/SQMSC/blob/main/SQMSC-MH.py) |
 ### 3. Evalution
 - Optimality with different number of QoS properties.
+
+|  | 2 | 3 | 4 |
+| :----: | :----: | :----: | :----: |
+| SQMSC_MH | 97.83849075818293 | 91.84538563779238 | 90.64903784735586 |
+| SQMSC | 87.4897763826431 | 82.32303283641438 | 80.26780550090027 |
+| GA | 68.73259440154652 | 67.55399216342042 | 63.903419043016584 |
+| GA+Skyline | 76.40572766805778 | 73.10892655823812 | 73.27862993013107 |
+| PSO | 60.51195854721643 | 55.17907841495449 | 51.487213804391594 |
+| PSO+Skyline | 69.58074795236917 | 66.57342985648108 | 63.90600935676791 |
+| TLBO | 69.68441389201915 | 56.56176677600886 | 50.416221131933625 |
+| TLBO+Skyline | 74.60445890990269 | 65.0304569811683 | 51.270468647746725 |
 - Optimality with different number of service candidates.
 - Scalability with different number of QoS properties.
 - Scalability with different number of service candidates.
