@@ -2,7 +2,7 @@
 All experiments are implemented on a PC with AMD Ryzen 5, CPU 2.38GHZ, and 16G RAM, running on Windows 10 x64 with Python 3.9.
 
 ## Methods
-- [GA](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA.py), [PSO](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO.py) and [TLBO](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO.py) use the original candidate set as the data input, while these algorithms+Skyline select the Skyline service in the candidate service set as the latest candidate set.
+- [GA](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA.py), [PSO](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO.py) and [TLBO](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO.py) use the original candidate set as the data input, while [GA+Skyline](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA%2BSkyline.py), [PSO+Skyline](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO%2BSkyline.py) and [TLBO+Skyline](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO%2BSkyline.py) select the Skyline service in the candidate service set as the latest candidate set.
 - The entire process of SQMSC-MH is to find Skyline services.
 - The input data of the above code are all data in the [qws2resetIndex](https://github.com/IntelligentServiceLab/SQMSC/blob/main/qws2resetIndex.csv) dataset. The qws2resetIndex dataset is roughly the same as the real dataset QWS2. The difference is that we have disturbed its row index.
 - Qws2 reset Index records eight QoS attributes, including response time, availability, throughput, successability, reliability, compliance, best practices and latency.
