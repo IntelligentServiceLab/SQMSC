@@ -95,6 +95,9 @@ With the development of service-oriented manufacturing model, more and more manu
 | subtask | 0.005989699999999765 | 0.009259899999999988 | 0.013277900000000287 | 0.017086400000000168 | 0.024998800000000543 |
 | compoundTask | 0.3279809999999994 | 1.6510077 | 2.6586736000000002 | 5.3516318 | 5.759590899999999 |
 | GA | 7.9854034 | 10.013262 | 11.3622174 | 13.4244668 | 15.0114512 |
+### 4. SQMSC architecture
+
+
 ### 5. Supplemental instruction
 - The input data of the above code are all data in the [qws2resetIndex](https://github.com/IntelligentServiceLab/SQMSC/blob/main/qws2resetIndex.csv) dataset. The qws2resetIndex dataset is roughly the same as the real dataset QWS2. The difference is that we have disturbed its row index.
 - Qws2 reset Index records eight QoS attributes, including response time, availability, throughput, successability, reliability, compliance, best practices and latency.
