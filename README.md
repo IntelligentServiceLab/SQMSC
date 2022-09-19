@@ -27,7 +27,7 @@ The data set we use is the first web service data set introduced in 2007 to meas
 | The maximun of reliability | 0.89 |
 | The minimun of reliability | 0.33 |
 
-### 4. Baseline
+### 4. Comparative Approaches
 | Baselines | Description | Code |
 | :-----: | :---- | :----: |
 | GA | This approach uses genetic algorithm. | [GA code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA.py) |
@@ -62,7 +62,7 @@ The data set we use is the first web service data set introduced in 2007 to meas
 - task_number
 - population_size
 
-### 6. Evalution
+### 6. Performance Evaluation
 - Optimality with different number of QoS properties.
 
 |  | 2 | 3 | 4 |
