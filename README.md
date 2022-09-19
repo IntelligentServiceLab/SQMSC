@@ -30,7 +30,7 @@ The data set we use is the first web service data set introduced in 2007 to meas
 ### 4. Comparative Approaches
 | Baselines | Description | Code |
 | :-----: | :---- | :----: |
-| GA | This approach uses genetic algorithm. | [GA code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA.py) |
+| GA | This approach uses genetic algorithm. | [GA](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA.py) |
 | PSO | This approach uses particle swarm optimization algorithm. | [PSO](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO.py) |
 | TLBO | This approach uses teaching learning based optimization algorithm. | [TLBO](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO.py) |
 | Skyline+GA | This approach uses genetic algorithm with initial Skyline services for each tasks. | [Skyline+GA](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA%2BSkyline.py) |
