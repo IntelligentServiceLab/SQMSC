@@ -1,10 +1,28 @@
-## Setup
+## SQMSC: Scalable QoS-aware Manufacturing Service Composition Optimization Approach via Business Process Decomposition
+### 1. Motivation
+With the development of service-oriented manufacturing model, more and more manufacturing services are released through manufacturing service platform. It is well known that the QoS-aware manufacturing service composition problem is NP-hard. Therefore, optimization remains a challenging research problem, especially in the case of large-scale manufacturing service data, which also raises scalability issues. In order to improve the optimization performance and scalability of QoS-aware manufacturing service composition, we think of a scalable QoS-aware manufacturing service composition optimization method based on business process decomposition to solve the problem step by step.[SQMSC code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/SQMSC.py)
+
+### 2. SQMSC architecture
+<div align=center><img width="600" height="400" src="SQMSC_Framework.png"/></div>
+
+### 3. Baseline
+| Baselines | Description | Code |
+| :-----: | :---- | :----: |
+| GA | This approach uses genetic algorithm. | [GA code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA.py) |
+| PSO | This approach uses particle swarm optimization algorithm. | [PSO code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO.py) |
+| TLBO | This approach uses teaching learning based optimization algorithm. | [TLBO code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO.py) |
+| GA+Skyline | This approach uses genetic algorithm with initial Skyline services for each tasks. | [GA+Skyline code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA%2BSkyline.py) |
+| PSO+Skyline | This approach uses particle swarm optimization algorithm with initial Skyline services for each tasks. | [PSO+Skyline code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO%2BSkyline.py) |
+| TLBO+Skyline | This approach uses teaching learning based optimization algorithm with initial Skyline services for each tasks. | [TLBO+Skyline code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO%2BSkyline.py) |
+| SQMSC-MH | This approach is a variant of SQWSC by not using a meta-heuristic algorithm, i.e., select the Skyline(compound) services. | [SQMSC-MH code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/SQMSC-MH.py) |
+
+### 4. Setup and Dataset
+- Setup
 All experiments are implemented on a PC with AMD Ryzen 5, CPU 2.38GHZ, and 16G RAM, running on Windows 10 x64 with Python 3.9.
-
-## Dataset
+- Dataset
 - The data set we use is the first web service data set introduced in 2007 to measure the quality of service (QoS) of real web services. The main goal of this data set is to provide a foundation for web services researchers. Web services are collected using the Web Services Crawler Engine (WSCE). Most of these services are obtained from public sources on the web, including the Universal Description, Discovery and Integration (UDDI) registry, search engines, and service portals.[Click here to go directly to the official website of the dataset](https://qwsdata.github.io/)
+- Characteristics of the database
 
-## Characteristics of the database
 |  Item   | Value  |
 |  ----  | ----  |
 | Number of the service  | 2507 |
@@ -18,20 +36,31 @@ All experiments are implemented on a PC with AMD Ryzen 5, CPU 2.38GHZ, and 16G R
 | The maximun of reliability | 0.89 |
 | The minimun of reliability | 0.33 |
 
-## SQMSC: Scalable QoS-aware Manufacturing Service Composition Optimization Approach via Business Process Decomposition
-### 1. Motivation
-With the development of service-oriented manufacturing model, more and more manufacturing services are released through manufacturing service platform. It is well known that the QoS-aware manufacturing service composition problem is NP-hard. Therefore, optimization remains a challenging research problem, especially in the case of large-scale manufacturing service data, which also raises scalability issues. In order to improve the optimization performance and scalability of QoS-aware manufacturing service composition, we think of a scalable QoS-aware manufacturing service composition optimization method based on business process decomposition to solve the problem step by step.[SQMSC code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/SQMSC.py)
-### 2. Baseline
-| Baselines | Description | Code |
-| :-----: | :---- | :----: |
-| GA | This approach uses genetic algorithm. | [GA code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA.py) |
-| PSO | This approach uses particle swarm optimization algorithm. | [PSO code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO.py) |
-| TLBO | This approach uses teaching learning based optimization algorithm. | [TLBO code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO.py) |
-| GA+Skyline | This approach uses genetic algorithm with initial Skyline services for each tasks. | [GA+Skyline code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA%2BSkyline.py) |
-| PSO+Skyline | This approach uses particle swarm optimization algorithm with initial Skyline services for each tasks. | [PSO+Skyline code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO%2BSkyline.py) |
-| TLBO+Skyline | This approach uses teaching learning based optimization algorithm with initial Skyline services for each tasks. | [TLBO+Skyline code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO%2BSkyline.py) |
-| SQMSC-MH | This approach is a variant of SQWSC by not using a meta-heuristic algorithm, i.e., select the Skyline(compound) services. | [SQMSC-MH code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/SQMSC-MH.py) |
-### 3. Evalution
+### 5. Parameters
+#### GA、GA+Skyline
+- candidate_number: Number of services in candidate set of each subtask,
+- crossover_probability
+- mutation_probability
+- task_number
+- population_size
+#### PSO、PSO+Skylie：
+- w: Inertia weight
+- c1 and c2: Learning factor
+- Vmax: speed limit
+- task_number
+- population_size
+#### TLBO、TLBO+Skyline
+- task_number
+- population_size
+#### SQWSC
+- n: Number of QoS attributes
+- candidate_number: Number of services in candidate set of each subtask
+- crossover_probability
+- mutation_probability
+- task_number
+- population_size
+
+### 6. Evalution
 - Optimality with different number of QoS properties.
 
 |  | 2 | 3 | 4 |
@@ -95,38 +124,11 @@ With the development of service-oriented manufacturing model, more and more manu
 | subtask | 0.0060 | 0.0093 | 0.0133 | 0.0171 | 0.0250 |
 | compoundTask | 0.3280 | 1.6510 | 2.6587 | 5.3516318 | 5.7596 |
 | GA | 7.9854 | 10.0133 | 11.3622 | 13.4245 | 15.0115 |
-### 4. SQMSC architecture
-<div align=center><img width="600" height="400" src="SQMSC_Framework.png"/></div>
 
-### 5. Supplemental instruction
+### 6. Supplemental instruction
 - The input data of the above code are all data in the [qws2resetIndex](https://github.com/IntelligentServiceLab/SQMSC/blob/main/qws2resetIndex.csv) dataset. The qws2resetIndex dataset is roughly the same as the real dataset QWS2. The difference is that we have disturbed its row index.
 - Qws2 reset Index records eight QoS attributes, including response time, availability, throughput, successability, reliability, compliance, best practices and latency.
 
-
-## Parameters
-### GA、GA+Skyline
-- candidate_number: Number of services in candidate set of each subtask,
-- crossover_probability
-- mutation_probability
-- task_number
-- population_size
-### PSO、PSO+Skylie：
-- w: Inertia weight
-- c1 and c2: Learning factor
-- Vmax: speed limit
-- task_number
-- population_size
-### TLBO、TLBO+Skyline
-- task_number
-- population_size
-### SQWSC
-- n: Number of QoS attributes
-- candidate_number: Number of services in candidate set of each subtask
-- crossover_probability
-- mutation_probability
-- task_number
-- population_size
-
-## Note：
+### 7. Note：
 - If you have any question about my code or want to share your idea, you can send email to me. Welcome at any time!
 - Email: jiayanxiang02@gmail.com
