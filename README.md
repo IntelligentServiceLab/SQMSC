@@ -116,16 +116,16 @@ The data set we use is the first web service data set introduced in 2007 to meas
 
 |  | 2 | 3 | 4 |
 | :----: | :----: | :----: | :----: |
-| subtask | 0.0092 | 0.0098 | 0.0110 |
-| compoundTask | 0.0788 | 1.3439 | 1.3239 |
-| GA | 9.1889 | 12.7778 | 15.4186 |
+| Select Subtask Service | 0.0092 | 0.0098 | 0.0110 |
+| Select Composite Task Service | 0.0788 | 1.3439 | 1.3239 |
+| Genetic Algorithm | 9.1889 | 12.7778 | 15.4186 |
 - Running time of each component in Alg. 1 with different number of service candidates
 
 |  | 20 | 40 | 60 | 80 | 100 |
 | :----: | :----: | :----: | :----: | :----: | :----: |
-| subtask | 0.0060 | 0.0093 | 0.0133 | 0.0171 | 0.0250 |
-| compoundTask | 0.3280 | 1.6510 | 2.6587 | 5.3516318 | 5.7596 |
-| GA | 7.9854 | 10.0133 | 11.3622 | 13.4245 | 15.0115 |
+| Select Subtask Service | 0.0060 | 0.0093 | 0.0133 | 0.0171 | 0.0250 |
+| Select Composite Task Service | 0.3280 | 1.6510 | 2.6587 | 5.3516318 | 5.7596 |
+| Genetic Algorithm | 7.9854 | 10.0133 | 11.3622 | 13.4245 | 15.0115 |
 
 ### 6. Supplemental instruction
 - The input data of the above code are all data in the [qws2resetIndex](https://github.com/IntelligentServiceLab/SQMSC/blob/main/qws2resetIndex.csv) dataset. The qws2resetIndex dataset is roughly the same as the real dataset QWS2. The difference is that we have disturbed its row index.
