@@ -96,7 +96,7 @@ With the development of service-oriented manufacturing model, more and more manu
 | compoundTask | 0.3279809999999994 | 1.6510077 | 2.6586736000000002 | 5.3516318 | 5.759590899999999 |
 | GA | 7.9854034 | 10.013262 | 11.3622174 | 13.4244668 | 15.0114512 |
 ### 4. SQMSC architecture
-![Click here](https://github.com/IntelligentServiceLab/SQMSC/blob/main/SQMSCarchitecture.jpg)
+![Click here](SQMSC_Framework.png)
 
 ### 5. Supplemental instruction
 - The input data of the above code are all data in the [qws2resetIndex](https://github.com/IntelligentServiceLab/SQMSC/blob/main/qws2resetIndex.csv) dataset. The qws2resetIndex dataset is roughly the same as the real dataset QWS2. The difference is that we have disturbed its row index.
