@@ -31,12 +31,12 @@ The data set we use is the first web service data set introduced in 2007 to meas
 | Baselines | Description | Code |
 | :-----: | :---- | :----: |
 | GA | This approach uses genetic algorithm. | [GA code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA.py) |
-| PSO | This approach uses particle swarm optimization algorithm. | [PSO code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO.py) |
-| TLBO | This approach uses teaching learning based optimization algorithm. | [TLBO code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO.py) |
-| Skyline+GA | This approach uses genetic algorithm with initial Skyline services for each tasks. | [Skyline+GA code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA%2BSkyline.py) |
-| Skyline+PSO | This approach uses particle swarm optimization algorithm with initial Skyline services for each tasks. | [Skyline+PSO code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO%2BSkyline.py) |
-| Skyline+TLBO | This approach uses teaching learning based optimization algorithm with initial Skyline services for each tasks. | [Skyline+TLBO code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO%2BSkyline.py) |
-| SQMSC-MH | This approach is a variant of SQWSC by not using a meta-heuristic algorithm, i.e., select the Skyline(compound) services. | [SQMSC-MH code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/SQMSC-MH.py) |
+| PSO | This approach uses particle swarm optimization algorithm. | [PSO](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO.py) |
+| TLBO | This approach uses teaching learning based optimization algorithm. | [TLBO](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO.py) |
+| Skyline+GA | This approach uses genetic algorithm with initial Skyline services for each tasks. | [Skyline+GA](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA%2BSkyline.py) |
+| Skyline+PSO | This approach uses particle swarm optimization algorithm with initial Skyline services for each tasks. | [Skyline+PSO](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO%2BSkyline.py) |
+| Skyline+TLBO | This approach uses teaching learning based optimization algorithm with initial Skyline services for each tasks. | [Skyline+TLBO](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO%2BSkyline.py) |
+| SQMSC-MH | This approach is a variant of SQWSC by not using a meta-heuristic algorithm, i.e., select the Skyline(compound) services. | [SQMSC-MH](https://github.com/IntelligentServiceLab/SQMSC/blob/main/SQMSC-MH.py) |
 
 ### 5. Parameters
 #### GA、Skyline+GA：
