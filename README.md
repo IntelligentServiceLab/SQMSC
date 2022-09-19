@@ -40,27 +40,27 @@ The data set we use is the first web service data set introduced in 2007 to meas
 
 ### 5. Parameters
 #### GA、Skyline+GA：
-- candidate_number: Number of services in candidate set of each subtask,
-- crossover_probability
-- mutation_probability
-- task_number
-- population_size
+- candidate_number: Number of services in candidate set of each subtask
+- crossover_probability: The probability that the chromosome segments of each individual in the population will cross
+- mutation_probability: The probability that each individual in a population has a chromosome mutation
+- task_number: The number of tasks in the workflow
+- population_size: The number of individuals in a population
 #### PSO、Skyline+PSO：
-- w: Inertia weight
+- w: The inertia weight represents the effect of the velocity of particles of the previous generation on the velocity of particles of the current generation
 - c1 and c2: Learning factor
-- Vmax: speed limit
-- task_number
-- population_size
+- Vmax: In order to balance the exploration ability and development ability of the algorithm, it is necessary to set a reasonable speed range and limit the maximum speed of particles
+- task_number: The number of tasks in the workflow
+- population_size: The number of individuals in a population
 #### TLBO、Skyline+TLBO
-- task_number
-- population_size
+- task_number: The number of tasks in the workflow
+- population_size: The number of individuals in a population
 #### SQWSC
 - n: Number of QoS attributes
 - candidate_number: Number of services in candidate set of each subtask
-- crossover_probability
-- mutation_probability
-- task_number
-- population_size
+- crossover_probability: The probability that the chromosome segments of each individual in the population will cross
+- mutation_probability: The probability that each individual in a population has a chromosome mutation
+- task_number: The number of tasks in the workflow
+- population_size: The number of individuals in a population
 
 ### 6. Performance Evaluation
 - Optimality with different number of QoS properties.
