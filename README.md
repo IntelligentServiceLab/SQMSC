@@ -18,7 +18,7 @@ All experiments are implemented on a PC with AMD Ryzen 5, CPU 2.38GHZ, and 16G R
 | The maximun of reliability | 0.89 |
 | The minimun of reliability | 0.33 |
 
-## SQMSC: Scalable QoS-aware Manufacturing Service Composition optimization approach via business process decomposition
+## SQMSC: Scalable QoS-aware Manufacturing Service Composition Optimization Approach via Business Process Decomposition
 ### 1. Motivation
 With the development of service-oriented manufacturing model, more and more manufacturing services are released through manufacturing service platform. It is well known that the QoS-aware manufacturing service composition problem is NP-hard. Therefore, optimization remains a challenging research problem, especially in the case of large-scale manufacturing service data, which also raises scalability issues. In order to improve the optimization performance and scalability of QoS-aware manufacturing service composition, we think of a scalable QoS-aware manufacturing service composition optimization method based on business process decomposition to solve the problem step by step.[SQMSC code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/SQMSC.py)
 ### 2. Baseline
