@@ -11,9 +11,9 @@ With the development of service-oriented manufacturing model, more and more manu
 | GA | This approach uses genetic algorithm. | [GA code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA.py) |
 | PSO | This approach uses particle swarm optimization algorithm. | [PSO code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO.py) |
 | TLBO | This approach uses teaching learning based optimization algorithm. | [TLBO code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO.py) |
-| GA+Skyline | This approach uses genetic algorithm with initial Skyline services for each tasks. | [GA+Skyline code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA%2BSkyline.py) |
-| PSO+Skyline | This approach uses particle swarm optimization algorithm with initial Skyline services for each tasks. | [PSO+Skyline code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO%2BSkyline.py) |
-| TLBO+Skyline | This approach uses teaching learning based optimization algorithm with initial Skyline services for each tasks. | [TLBO+Skyline code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO%2BSkyline.py) |
+| Skyline+GA | This approach uses genetic algorithm with initial Skyline services for each tasks. | [Skyline+GA code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/GA%2BSkyline.py) |
+| Skyline+PSO | This approach uses particle swarm optimization algorithm with initial Skyline services for each tasks. | [Skyline+PSO code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/PSO%2BSkyline.py) |
+| Skyline+TLBO | This approach uses teaching learning based optimization algorithm with initial Skyline services for each tasks. | [Skyline+TLBO code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/TLBO%2BSkyline.py) |
 | SQMSC-MH | This approach is a variant of SQWSC by not using a meta-heuristic algorithm, i.e., select the Skyline(compound) services. | [SQMSC-MH code](https://github.com/IntelligentServiceLab/SQMSC/blob/main/SQMSC-MH.py) |
 
 ### 4. Setup and Dataset
